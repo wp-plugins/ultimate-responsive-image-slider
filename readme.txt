@@ -21,6 +21,7 @@ Using **[URIS id=123]** shortcode, you can publish image slider in any Page or P
 **Free Plugin Demo:** [Ultimate Responsive Image Slider Free Demo](http://demo.weblizar.com/ultimate-responsive-image-slider-free/)
 
 > **Free Plugin Features**
+>
 > * Fully Responsive Slider Plugin
 > * Multiple Image Uploader
 > * Add Unlimited Image Slides Into Single Slider
