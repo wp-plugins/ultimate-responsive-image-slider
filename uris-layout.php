@@ -65,7 +65,9 @@ $j = 1;
 	background: rgba(255, 255, 255, 0.7); !important;
 	white-space: unset !important;
 	max-width: 90%;
-	min-width: 30%;
+	min-width: 40%;
+	transform: initial !important;
+	font-size: 14px !important;
 }
 
 #example3_<?php echo $post_id; ?> .desc-in {
@@ -75,8 +77,10 @@ $j = 1;
 #example3_<?php echo $post_id; ?> .desc-in-bg {
 	background: rgba(<?php echo $RISP_Slide_In_Desc_BG_Color; ?>, <?php echo $RISP_BG_Color_Opacity; ?>) !important;
 	white-space: unset !important;
-	max-width: 90%;
+	width: 80% !important;
 	min-width: 30%;
+	transform: initial !important;
+	font-size: 13px !important;
 }
 
 @media (max-width: 640px) {
@@ -119,7 +123,7 @@ $j = 1;
 				data-position="centerCenter"
 				data-vertical="-14%"
 				data-show-transition="left" data-show-delay="500">
-				<?php if(strlen($Title) > 120 ) echo substr($Title,0,120); else echo $Title; ?>
+				<?php if(strlen($Title) > 100 ) echo substr($Title,0,100); else echo $Title; ?>
 			</p>
 			<?php } ?>
 

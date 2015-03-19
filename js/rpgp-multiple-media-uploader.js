@@ -37,7 +37,7 @@ jQuery(function(jQuery) {
                     var images = file_frame.state().get('selection').toJSON(),
                             length = images.length;
                     for (var i = 0; i < length; i++) {
-                        rpggallery.get_thumbnail(images[i]['id']);
+                        rpggallery.get_thumbnail_uris(images[i]['id']);
                     }
                 });
                 file_frame.open();
@@ -45,11 +45,11 @@ jQuery(function(jQuery) {
 
            
         },
-        get_thumbnail: function(id, cb) {
+        get_thumbnail_uris: function(id, cb) {
             cb = cb || function() {
             };
             var data = {
-                action: 'rpggallery_get_thumbnail',
+                action: 'uris_get_thumbnail',
                 imageid: id
             };
             jQuery.post(ajaxurl, data, function(response) {

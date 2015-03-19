@@ -88,7 +88,7 @@ class WRIS {
 			add_action('save_post', array(&$this, 'add_image_meta_box_save'), 9, 1);
 			add_action('save_post', array(&$this, 'ris_settings_meta_save'), 9, 1);
 			
-			add_action('wp_ajax_rpggallery_get_thumbnail', array(&$this, 'ajax_get_thumbnail'));
+			add_action('wp_ajax_uris_get_thumbnail', array(&$this, 'ajax_get_thumbnail_uris'));
 		}
     }
 	
@@ -180,7 +180,82 @@ class WRIS {
 		add_meta_box( __('Add Images', WRIS_TEXT_DOMAIN), __('Add Images', WRIS_TEXT_DOMAIN), array(&$this, 'ris_generate_add_image_meta_box_function'), 'ris_gallery', 'normal', 'low' );
 		add_meta_box( __('Apply Setting On Ultimate Responsive Image Slider', WRIS_TEXT_DOMAIN), __('Apply Setting On Ultimate Responsive Image Slider', WRIS_TEXT_DOMAIN), array(&$this, 'ris_settings_meta_box_function'), 'ris_gallery', 'normal', 'low');
 		add_meta_box ( __('Copy Image Slider Shortcode', WRIS_TEXT_DOMAIN), __('Copy Image Slider Shortcode', WRIS_TEXT_DOMAIN), array(&$this, 'ris_shotcode_meta_box_function'), 'ris_gallery', 'side', 'low');
+		add_meta_box(__('Show us some love, Rate Us', WRIS_TEXT_DOMAIN) , __('Show us some love, Rate Us', WRIS_TEXT_DOMAIN), array(&$this, 'uris_Rate_us_meta_box_function'), 'ris_gallery', 'side', 'low');
+		add_meta_box(__('Upgrade To Pro Version', WRIS_TEXT_DOMAIN) , __('Upgrade To Pro Version', WRIS_TEXT_DOMAIN), array(&$this, 'uris_upgrade_to_pro_function'), 'ris_gallery', 'side', 'low');
+		add_meta_box(__('Pro Features', WRIS_TEXT_DOMAIN) , __('Pro Features', WRIS_TEXT_DOMAIN), array(&$this ,'uris_pro_features'), 'ris_gallery', 'side', 'low');
+	
+	
 	}
+	
+	/**
+	 * Rate Us Meta Box
+	 */
+	public function uris_Rate_us_meta_box_function() { ?>
+		<style>
+		.fag-rate-us span.dashicons{
+			width: 30px;
+			height: 30px;
+		}
+		.fag-rate-us span.dashicons-star-filled:before {
+			content: "\f155";
+			font-size: 30px;
+		}
+		</style>
+		<div align="center">
+			<p>Please Review & Rate Us On WordPress</p>
+			<a class="upgrade-to-pro-demo fag-rate-us" style=" text-decoration: none; height: 40px; width: 40px;" href="http://wordpress.org/plugins/responsive-portfolio/" target="_blank">
+				<span class="dashicons dashicons-star-filled"></span>
+				<span class="dashicons dashicons-star-filled"></span>
+				<span class="dashicons dashicons-star-filled"></span>
+				<span class="dashicons dashicons-star-filled"></span>
+				<span class="dashicons dashicons-star-filled"></span>
+			</a>
+		</div>
+		<div class="upgrade-to-pro " style="text-align:center;margin-bottom:10px;margin-top:10px;">
+			<a href="https://wordpress.org/plugins/ultimate-responsive-image-slider/" target="_blank" class="button button-primary button-hero ">RATE US</a>
+		</div>
+		<?php
+	}
+	public function uris_upgrade_to_pro_function(){
+	?>
+		<div class="upgrade-to-pro-demo" style="text-align:center;margin-bottom:10px;margin-top:10px;">
+			<a href="http://demo.weblizar.com/ultimate-responsive-image-slider-pro/"  target="_new" class="button button-primary button-hero">View Live Demo</a>
+		</div>
+		<div class="upgrade-to-pro-admin-demo" style="text-align:center;margin-bottom:10px;">
+			<a href="http://weblizar.com/ultimate-responsive-image-slider-pro/" target="_new" class="button button-primary button-hero">View Admin Demo</a>
+		</div>
+		<div class="upgrade-to-pro" style="text-align:center;margin-bottom:10px;">
+			<a href="http://weblizar.com/ultimate-responsive-image-slider-pro/" target="_new" class="button button-primary button-hero">Upgarde To Pro</a>
+		</div>
+	<?php
+	}
+
+	public	function uris_pro_features(){
+			?>
+
+			<ul style="">
+						<li class="plan-feature">Responsive Design</li>
+						<li class="plan-feature">5 Slider Layout</li>
+						<li class="plan-feature">Unlimited Color Scheme</li>
+						<li class="plan-feature">Touch Slider</li>
+						<li class="plan-feature">Full Screen slideshow</li>
+						<li class="plan-feature">Thumbnail Slider</li>
+						<li class="plan-feature">Lightbox Integrated</li>
+						<li class="plan-feature">External Link Button</li>
+						<li class="plan-feature">Carousel Slider</li>
+						<li class="plan-feature">All Gallery Shortcode</li>
+						<li class="plan-feature">Each Gallery has Unique Shortcode</li>
+						<li class="plan-feature">Drag and Drop image Position</li>
+						<li class="plan-feature">Multiple Image uploader</li>
+						<li class="plan-feature">Shortcode Button on post or page</li>
+						<li class="plan-feature">Unique settings for each gallery</li>
+						<li class="plan-feature">Auto Play Pause</li>
+						<li class="plan-feature">All Browser Compatible</li>
+						
+						
+					</ul>
+			<?php 
+	} 
 
 	/**
 	 * This function display Add New Image interface
@@ -258,7 +333,7 @@ class WRIS {
 		<?php 
 	}	
 
-	public function admin_thumb($id) {
+	public function admin_thumb_uris($id) {
 		$image  = wp_get_attachment_image_src($id, 'rpggallery_admin_original', true);
         $image1 = wp_get_attachment_image_src($id, 'rpggallery_admin_thumb', true);
         $image3 = wp_get_attachment_image_src($id, 'rpggallery_admin_large', true);
@@ -288,8 +363,8 @@ class WRIS {
     }
 	
 	
-    public function ajax_get_thumbnail() {
-        echo $this->admin_thumb($_POST['imageid']);
+    public function ajax_get_thumbnail_uris() {
+        echo $this->admin_thumb_uris($_POST['imageid']);
         die;
     }
 
@@ -351,6 +426,23 @@ class WRIS {
 
 global $WRIS;
 $WRIS = WRIS::forge();
+
+/**
+ * upgrade to pro
+ */
+add_action('admin_menu' , 'uris_pro_SettingsPage');
+function uris_pro_SettingsPage() {
+    add_submenu_page('edit.php?post_type=ris_gallery', __('Upgrade To Pro', WRIS_TEXT_DOMAIN), __('Upgrade To Pro', WRIS_TEXT_DOMAIN), 'administrator', 'ris_gallery', 'uris_upgrade_pro_function');
+	function uris_upgrade_pro_function() {
+	
+		 wp_enqueue_style('wl-font-awesome-4', WRIS_PLUGIN_URL.'css/font-awesome/css/font-awesome.min.css');
+		wp_enqueue_style('wl-pricing-table-css', WRIS_PLUGIN_URL.'css/pricing-table.css');
+		wp_enqueue_style('wl-boot-strap-admin', WRIS_PLUGIN_URL.'css/bootstrap-admin.css');
+    
+		require_once("get-uris-pro.php");
+	}
+}
+
 
 /**
  * Weblizar RIS Short Code [URIS]

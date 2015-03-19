@@ -35,6 +35,66 @@ Using **[URIS id=123]** shortcode, you can publish image slider in any Page or P
 > * All Major & Latest Browser Compatible (IE, Chrome, Firefox)
 > * All Major Device Support
 > * Multilingual Translation Ready
+> * Drag And Drop Image Position
+
+
+### Ultimate Responsive Image Slider Pro Features:
+A Perfect Responsive Image Slider plugin for WordPress. Contain 5 types of slider layout. Tested on all browser like Chrome, Mozilla, Safari, IE etc.. 
+
+
+> * Fully Responsive Slider Plugin
+> * Multiple Image Uploader
+> * Add Unlimited Image Slides Into Single Slider
+> * Show Multiple Sliders Into Single Page / Post
+> * Image Slider Setting Dashboard
+> * Enable/Disable Slider Title
+> * Enable/Disable Slide Title
+> * Enable/Disable Slide Description
+> * Enable/Disable Navigation Bullets
+> * Enable/Disable Slide Thumbnails
+> * All Major & Latest Browser Compatible (IE, Chrome, Firefox)
+> * All Major Device Support
+> * Multilingual Translation Ready
+> * 5 Slider Layout
+> * Unlimited Color Scheme
+> * Touch Slider
+> * Full Screen slideshow
+> * Thumbnail Slider
+> * Lightbox Integrated
+> * External Link Button
+> * Carousel Slider
+> * All Gallery Shortcode
+> * Each Gallery has Unique Shortcode
+> * Drag and Drop image Position
+> * Multiple Image uploader
+> * Shortcode Button on post or page
+> * Unique settings for each gallery
+> * Auto Play Pause
+> * All Browser Compatible
+>
+
+Ultimate Responsive Image Slider Pro is very flexible and and compatible on all devices like ipad,iphone smart phone etc. 
+
+> #### **Live Demos**
+
+> * [DEMO : Layout 1](http://demo.weblizar.com/ultimate-responsive-image-slider-pro/)
+> * [DEMO : Layout 2](http://demo.weblizar.com/ultimate-responsive-image-slider-pro/slider-layout-2/)
+> * [DEMO : Layout 3](http://demo.weblizar.com/ultimate-responsive-image-slider-pro/slider-layout-3/)
+> * [DEMO : Layout 4](http://demo.weblizar.com/ultimate-responsive-image-slider-pro/slider-layout-4/)
+> * [DEMO : Layout 5](http://demo.weblizar.com/ultimate-responsive-image-slider-pro/slider-layout-5/)
+
+
+### Plugin Admin Features
+
+Plugin has extreme Admin dashboard. Plugin settings is very easy and user friendly.With Multiple Image Uploader you are easily add multiple images in seconds
+
+> ### Try Ultimate Responsive Image Slider Pro Demo: [Live Demo](http://demo.weblizar.com/ultimate-responsive-image-slider-pro/)
+>
+> ### Try Ultimate Responsive Image Slider Pro Admin: [Admin Demo](http://demo.weblizar.com/ultimate-responsive-image-slider-pro-admin-demo/)
+>
+>### Upgrade To: [Ultimate Responsive Image Slider Pro](weblizar.com/ultimate-responsive-image-slider-pro/)
+
+
 
 If you have any question contact us at here: [Plugin Support Forum ](http://wordpress.org/support/plugin/ultimate-responsive-image-slider) 
 

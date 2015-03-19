@@ -15,15 +15,7 @@ if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRI
 }
 ?>
 <style>
-@media only screen and (min-width: 970px){
-	#post-body.columns-2 #postbox-container-1 {
-		float: right;
-		margin-right: 15px;
-		width: 280px;
-		right:0;
-		position:fixed;
-	}
-}
+
 .thumb-pro th, .thumb-pro label, .thumb-pro h3, .thumb-pro{
 	color:#31a3dd !important;
 	font-weight:bold;
