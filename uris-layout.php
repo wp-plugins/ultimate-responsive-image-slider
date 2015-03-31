@@ -99,7 +99,9 @@ $j = 1;
 	}
 }
 </style>
-<h3><?php echo get_the_title( $post_id ); ?> </h3>
+<?php  if($WRIS_L3_Slide_Title == 1) { ?>
+<h3 class="uris-slider-title"><?php echo get_the_title( $post_id ); ?> </h3>
+<?php } ?>
 <div id="example3_<?php echo $post_id; ?>" class="slider-pro">
 	<!---- slides div start ---->
 	<div class="sp-slides">

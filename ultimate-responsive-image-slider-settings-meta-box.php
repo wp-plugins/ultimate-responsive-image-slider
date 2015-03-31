@@ -6,6 +6,7 @@ $PostId = $post->ID;
 $WRIS_Gallery_Settings_Key = "WRIS_Gallery_Settings_".$PostId;
 $WRIS_Gallery_Settings = unserialize(get_post_meta( $PostId, $WRIS_Gallery_Settings_Key, true));
 if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRIS_L3_Slider_Height']) {
+	$WRIS_L3_Slide_Title   		    = $WRIS_Gallery_Settings['WRIS_L3_Slide_Title'];
 	$WRIS_L3_Auto_Slideshow   		= $WRIS_Gallery_Settings['WRIS_L3_Auto_Slideshow'];
 	$WRIS_L3_Sliding_Arrow   		= $WRIS_Gallery_Settings['WRIS_L3_Sliding_Arrow'];
 	$WRIS_L3_Slider_Navigation   	= $WRIS_Gallery_Settings['WRIS_L3_Slider_Navigation'];
@@ -31,6 +32,18 @@ if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRI
 	<tbody>
 		<tr id="L3">
 			<th scope="row" colspan="2"><h2>Configure Settings For Slider Shortcode: <?php echo "[URIS id=$PostId]"; ?></h2><hr></th>
+		</tr>
+		
+		<tr id="L3">
+			<th scope="row"><label>Display Slider Title</label></th>
+			<td>
+				<?php if(!isset($WRIS_L3_Slide_Title)) $WRIS_L3_Slide_Title = 1; ?>
+				<input type="radio" name="wl-l3-slide-title" id="wl-l3-slide-title" value="1" <?php if($WRIS_L3_Slide_Title == 1 ) { echo "checked"; } ?>> <i class="fa fa-check fa-2x"></i> 
+				<input type="radio" name="wl-l3-slide-title" id="wl-l3-slide-title" value="0" <?php if($WRIS_L3_Slide_Title == 0 ) { echo "checked"; } ?>> <i class="fa fa-times fa-2x"></i>
+				<p class="description">
+					Select Yes/No option to show/hide slide title above slider.
+				</p>
+			</td>
 		</tr>
 		
 		<tr id="L3">

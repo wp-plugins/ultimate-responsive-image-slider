@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Ultimate Responsive Image Slider
- * Version: 1.1
+ * Version: 1.2
  * Description: Add unlimited image slides using Ultimate Responsive Image Slider in any Page and Post content to give an attractive mode to represent contents.
  * Author: Weblizar
  * Author URI: http://weblizar.com/plugins/
@@ -19,6 +19,7 @@ register_activation_hook( __FILE__, 'WRIS_DefaultSettingsPro' );
 function WRIS_DefaultSettingsPro(){
     $DefaultSettingsProArray = serialize( array(
 		//layout 3 settings
+		"WRIS_L3_Slide_Title"   		=> 1,
 		"WRIS_L3_Auto_Slideshow"   		=> 1,
 		"WRIS_L3_Sliding_Arrow"   		=> 1,
 		"WRIS_L3_Slider_Navigation"   	=> 1,
@@ -291,11 +292,11 @@ class WRIS {
 								<input type="text" id="rpggallery_admin_large[]" name="rpggallery_admin_large[]" class="rpg_label_text"  value="<?php echo $url3; ?>"  readonly="readonly" style="display:none;" />
 								<p>
 									<label>Slide Title</label>
-									<input type="text" id="rpgp_image_label[]" name="rpgp_image_label[]" value="<?php echo ucwords($name); ?>" placeholder="Enter Slide Title" class="rpg_label_text">
+									<input type="text" id="rpgp_image_label[]" name="rpgp_image_label[]" value="<?php echo $name; ?>" placeholder="Enter Slide Title" class="rpg_label_text">
 								</p>
 								<p>
 									<label>Slide Descriptions</label>
-									<textarea rows="4" cols="50" id="rpgp_image_desc[]" name="rpgp_image_desc[]" placeholder="Enter Slide Descriptions" class="rpg_label_text"><?php echo ucfirst($desc); ?></textarea>
+									<textarea rows="4" cols="50" id="rpgp_image_desc[]" name="rpgp_image_desc[]" placeholder="Enter Slide Descriptions" class="rpg_label_text"><?php echo $desc; ?></textarea>
 								</p>
 							</div>
 						</li>
@@ -402,6 +403,7 @@ class WRIS {
 	public function ris_settings_meta_save($PostID) {
 		if(isset($PostID) && isset($_POST['wl_action']) == "wl-save-settings") {
 
+			$WRIS_L3_Slide_Title				=	$_POST['wl-l3-slide-title'];
 			$WRIS_L3_Auto_Slideshow				=	$_POST['wl-l3-auto-slide'];
 			$WRIS_L3_Sliding_Arrow				=	$_POST['wl-l3-sliding-arrow'];
 			$WRIS_L3_Slider_Navigation			=	$_POST['wl-l3-navigation'];
@@ -410,6 +412,7 @@ class WRIS {
 			$WRIS_L3_Slider_Height				=	$_POST['wl-l3-slider-height'];
 			
 			$WRIS_Settings_Array = serialize( array(
+				'WRIS_L3_Slide_Title'  			=> $WRIS_L3_Slide_Title,
 				'WRIS_L3_Auto_Slideshow'  			=> $WRIS_L3_Auto_Slideshow,
 				'WRIS_L3_Sliding_Arrow'  			=> $WRIS_L3_Sliding_Arrow,
 				'WRIS_L3_Slider_Navigation'  		=> $WRIS_L3_Slider_Navigation,

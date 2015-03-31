@@ -15,6 +15,7 @@ function ResponsiveWWRISroShortCode( $Id ) {
 		$WRIS_Gallery_Settings_Key = "WRIS_Gallery_Settings_".$WRIS_Id;
 		$WRIS_Gallery_Settings = unserialize(get_post_meta( $WRIS_Id, $WRIS_Gallery_Settings_Key, true));
 		if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRIS_L3_Slider_Height']) {
+			$WRIS_L3_Slide_Title   		    = $WRIS_Gallery_Settings['WRIS_L3_Slide_Title'];
 			$WRIS_L3_Auto_Slideshow   		= $WRIS_Gallery_Settings['WRIS_L3_Auto_Slideshow'];
 			$WRIS_L3_Sliding_Arrow   		= $WRIS_Gallery_Settings['WRIS_L3_Sliding_Arrow'];
 			$WRIS_L3_Slider_Navigation   	= $WRIS_Gallery_Settings['WRIS_L3_Slider_Navigation'];
