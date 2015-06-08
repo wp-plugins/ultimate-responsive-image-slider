@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Ultimate Responsive Image Slider
- * Version: 1.3
+ * Version: 1.4
  * Description: Add unlimited image slides using Ultimate Responsive Image Slider in any Page and Post content to give an attractive mode to represent contents.
  * Author: Weblizar
  * Author URI: http://weblizar.com/plugins/
@@ -223,10 +223,10 @@ class WRIS {
 			<a href="http://demo.weblizar.com/ultimate-responsive-image-slider-pro/"  target="_new" class="button button-primary button-hero">View Live Demo</a>
 		</div>
 		<div class="upgrade-to-pro-admin-demo" style="text-align:center;margin-bottom:10px;">
-			<a href="http://weblizar.com/ultimate-responsive-image-slider-pro/" target="_new" class="button button-primary button-hero">View Admin Demo</a>
+			<a href="https://weblizar.com/plugins/ultimate-responsive-image-slider-pro/" target="_new" class="button button-primary button-hero">View Admin Demo</a>
 		</div>
 		<div class="upgrade-to-pro" style="text-align:center;margin-bottom:10px;">
-			<a href="http://weblizar.com/ultimate-responsive-image-slider-pro/" target="_new" class="button button-primary button-hero">Upgarde To Pro</a>
+			<a href="https://weblizar.com/plugins/ultimate-responsive-image-slider-pro/" target="_new" class="button button-primary button-hero">Upgarde To Pro</a>
 		</div>
 	<?php
 	}
