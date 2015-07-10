@@ -67,6 +67,7 @@ $j = 1;
 	max-width: 90%;
 	min-width: 40%;
 	transform: initial !important;
+	-webkit-transform: initial !important;
 	font-size: 14px !important;
 }
 
@@ -80,6 +81,7 @@ $j = 1;
 	width: 80% !important;
 	min-width: 30%;
 	transform: initial !important;
+	-webkit-transform: initial !important;
 	font-size: 13px !important;
 }
 

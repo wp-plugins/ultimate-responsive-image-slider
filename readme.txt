@@ -4,7 +4,7 @@ Donate link: http://www.weblizar.com/
 Tags: best slider plugin, carousel, carousel slider, coin slider, content slider, content slideshow, featured-content-slider, flex slider, free video slider, Horizontal slider, HTML5 slider, image, Image Rotator, image slider, image slideshow, images, javascript slider, javascript slideshow, jquery slider, jquery slideshow, media, nivo slider, nivoslider, page, photo slider, picture slider, plugin, Post, posts, posts slider, recent post slider, responsive, responsive slider, responsive slideshow, seo, slide, slide show, slider, slider plugin, slider shortcode, slides, slideshow, slideshow manager, slideshow plugin, vertical slider, vertical slides,  wordpress seo, wordpress slider, wordpress slideshow, wp, wp slider, thumbnail slider, responsive image slider, slider plugin, mobile slider, tab slider, touch slider, text slider, link slider,  media slider, 3d slider , awesome slider, wordpress slider plugin, meta slider, free slider, free plugin, gpl slider, Responsive Touch Slider, easy slider , simple slider, image slideshow, lightbox, popbox, gallery, image gallery, slider gallery, photo gallery, thumbnail, portfolio, portfolio gallery, slider portfolio, css slider, jquery plugin, jquery slider plugin, jquery slideshow plugin, animation, animation slider, navigation slider, bullet slider, html5, css3 slider, css3 slideshow, responsive images, responsive, post slider, page slider, wordpress photos slider , wordpress photos slideshow, responsive 3d slider, slideshow
 Requires at least: 3.3
 Tested up to: 4.2.2
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,10 @@ If you have any question contact us at here: [Plugin Support Forum ](http://word
 == Changelog ==
 
 For more information, see Weblizar(http://wwww.weblizar.com/).
+
+= Version 1.6 10-07-2015 =
+
+* Resolved font of image titles is shrink problem for responsive views (safari). 
 
 = Version 1.5 07-07-2015 =
 
