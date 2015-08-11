@@ -2,9 +2,9 @@
 Contributors: weblizar
 Donate link: http://www.weblizar.com/
 Tags: best slider plugin, carousel, carousel slider, coin slider, content slider, content slideshow, featured-content-slider, flex slider, free video slider, Horizontal slider, HTML5 slider, image, Image Rotator, image slider, image slideshow, images, javascript slider, javascript slideshow, jquery slider, jquery slideshow, media, nivo slider, nivoslider, page, photo slider, picture slider, plugin, Post, posts, posts slider, recent post slider, responsive, responsive slider, responsive slideshow, seo, slide, slide show, slider, slider plugin, slider shortcode, slides, slideshow, slideshow manager, slideshow plugin, vertical slider, vertical slides,  wordpress seo, wordpress slider, wordpress slideshow, wp, wp slider, thumbnail slider, responsive image slider, slider plugin, mobile slider, tab slider, touch slider, text slider, link slider,  media slider, 3d slider , awesome slider, wordpress slider plugin, meta slider, free slider, free plugin, gpl slider, Responsive Touch Slider, easy slider , simple slider, image slideshow, lightbox, popbox, gallery, image gallery, slider gallery, photo gallery, thumbnail, portfolio, portfolio gallery, slider portfolio, css slider, jquery plugin, jquery slider plugin, jquery slideshow plugin, animation, animation slider, navigation slider, bullet slider, html5, css3 slider, css3 slideshow, responsive images, responsive, post slider, page slider, wordpress photos slider , wordpress photos slideshow, responsive 3d slider, slideshow
-Requires at least: 3.3
-Tested up to: 4.2.2
-Stable tag: 1.6
+Requires at least: 3.5
+Tested up to: 4.3
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Add Fully Responsive Image Slider To Your WordPress Blog
 
 == Description ==
 
-Ultimate responsive image slider a  fully responsive slider plugin for WordPress blog users. You can add infinite image slides in a single slider using multiple image uploader. You can publish unlimited slider on your blog.
+Ultimate responsive image slider a fully responsive slider plugin for WordPress blog users. You can add infinite image slides in a single slider using multiple image uploader. You can publish unlimited slider on your blog.
 
 Images slider has various settings like customizable height and width, auto play slides, slide thumbnails, navigation buttons and many more. You can configure each slider setting individually and accordingly to you. You can show slider within the Page or Post content.
 
@@ -124,6 +124,15 @@ If you have any question contact us at here: [Plugin Support Forum ](http://word
 == Changelog ==
 
 For more information, see Weblizar(http://wwww.weblizar.com/).
+
+= Version 1.7 11-08-2015 =
+
+* New Feature: Slide Translation Speed Setting
+* New Feature: Slide Translation Effect Setting
+* New Feature: Custom CSS Setting
+* Improvement: Delete all slide button
+* Fixed: Now you can embed the slider shortcode in any theme file and sidebar or footer widget
+* Compatible with wordPress 4.3 version
 
 = Version 1.6 10-07-2015 =
 

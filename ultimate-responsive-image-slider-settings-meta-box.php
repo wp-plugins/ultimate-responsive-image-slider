@@ -8,20 +8,22 @@ $WRIS_Gallery_Settings = unserialize(get_post_meta( $PostId, $WRIS_Gallery_Setti
 if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRIS_L3_Slider_Height']) {
 	$WRIS_L3_Slide_Title   		    = $WRIS_Gallery_Settings['WRIS_L3_Slide_Title'];
 	$WRIS_L3_Auto_Slideshow   		= $WRIS_Gallery_Settings['WRIS_L3_Auto_Slideshow'];
+	$WRIS_L3_Transition   			= $WRIS_Gallery_Settings['WRIS_L3_Transition'];
+	$WRIS_L3_Transition_Speed   	= $WRIS_Gallery_Settings['WRIS_L3_Transition_Speed'];
 	$WRIS_L3_Sliding_Arrow   		= $WRIS_Gallery_Settings['WRIS_L3_Sliding_Arrow'];
 	$WRIS_L3_Slider_Navigation   	= $WRIS_Gallery_Settings['WRIS_L3_Slider_Navigation'];
 	$WRIS_L3_Navigation_Button   	= $WRIS_Gallery_Settings['WRIS_L3_Navigation_Button'];
 	$WRIS_L3_Slider_Width   		= $WRIS_Gallery_Settings['WRIS_L3_Slider_Width'];
 	$WRIS_L3_Slider_Height   		= $WRIS_Gallery_Settings['WRIS_L3_Slider_Height'];
+	$WRIS_L3_Custom_CSS   			= $WRIS_Gallery_Settings['WRIS_L3_Custom_CSS'];
 }
 ?>
 <style>
-
-.thumb-pro th, .thumb-pro label, .thumb-pro h3, .thumb-pro{
+.thumb-pro th, .thumb-pro label, .thumb-pro h3, .thumb-pro {
 	color:#31a3dd !important;
 	font-weight:bold;
 }
-.caro-pro th, .caro-pro label, .caro-pro h3, .caro-pro{
+.caro-pro th, .caro-pro label, .caro-pro h3, .caro-pro {
 	color:#DA5766 !important;
 	font-weight:bold;
 }
@@ -54,6 +56,28 @@ if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRI
 				<input type="radio" name="wl-l3-auto-slide" id="wl-l3-auto-slide" value="0" <?php if($WRIS_L3_Auto_Slideshow == 0 ) { echo "checked"; } ?>> <i class="fa fa-times fa-2x"></i>
 				<p class="description">
 					Select Yes/No option to auto slide enable or disable into slider.
+				</p>
+			</td>
+		</tr>
+		<tr id="L3">
+			<th scope="row"><label>Slide Transition</label></th>
+			<td>
+				<?php if(!isset($WRIS_L3_Transition)) $WRIS_L3_Transition = 1; ?>
+				<input type="radio" name="wl-l3-transition" id="wl-l3-transition" value="1" <?php if($WRIS_L3_Transition == 1 ) { echo "checked"; } ?>> Fade 
+				<input type="radio" name="wl-l3-transition" id="wl-l3-transition" value="0" <?php if($WRIS_L3_Transition == 0 ) { echo "checked"; } ?>> Slide
+				<p class="description">
+					Select a transition effect you want to apply on slides.
+				</p>
+			</td>
+		</tr>
+		
+		<tr id="L3">
+			<th scope="row"><label>Slide Transition Speed</label></th>
+			<td>
+				<?php if(!isset($WRIS_L3_Transition_Speed)) $WRIS_L3_Transition_Speed = 5000; ?>
+				<input type="text" name="wl-l3-transition-speed" id="wl-l3-transition-speed" value="<?php echo $WRIS_L3_Transition_Speed; ?>">
+				<p class="description">
+					Set your desired transition speed of slides. Default width is 5000px.
 				</p>
 			</td>
 		</tr>
@@ -120,5 +144,18 @@ if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRI
 				</p>
 			</td>
 		</tr>
+		
+		<tr id="L3">
+			<th scope="row"><label>Custom CSS</label></th>
+			<td>
+				<?php if(!isset($WRIS_L3_Custom_CSS)) $WRIS_L3_Custom_CSS = ""; ?>
+				<textarea name="wl-l3-custom-css" id="wl-l3-custom-css" rows="5" cols="75"><?php echo $WRIS_L3_Custom_CSS; ?></textarea>
+				<p class="description">
+					Enter any custom css you want to apply on this slider into textarea filed.<br>
+					<strong>Note:</strong> Please Do Not Use <strong>&lt;style&gt;...&lt;/style&gt;</strong> Tag With Custom CSS.
+				</p>
+			</td>
+		</tr>
+		
 	</tbody>
 </table>

@@ -17,11 +17,14 @@ function ResponsiveWWRISroShortCode( $Id ) {
 		if($WRIS_Gallery_Settings['WRIS_L3_Slider_Width'] && $WRIS_Gallery_Settings['WRIS_L3_Slider_Height']) {
 			$WRIS_L3_Slide_Title   		    = $WRIS_Gallery_Settings['WRIS_L3_Slide_Title'];
 			$WRIS_L3_Auto_Slideshow   		= $WRIS_Gallery_Settings['WRIS_L3_Auto_Slideshow'];
+			$WRIS_L3_Transition   			= $WRIS_Gallery_Settings['WRIS_L3_Transition'];
+			$WRIS_L3_Transition_Speed   	= $WRIS_Gallery_Settings['WRIS_L3_Transition_Speed'];
 			$WRIS_L3_Sliding_Arrow   		= $WRIS_Gallery_Settings['WRIS_L3_Sliding_Arrow'];
 			$WRIS_L3_Slider_Navigation   	= $WRIS_Gallery_Settings['WRIS_L3_Slider_Navigation'];
 			$WRIS_L3_Navigation_Button   	= $WRIS_Gallery_Settings['WRIS_L3_Navigation_Button'];
 			$WRIS_L3_Slider_Width   		= $WRIS_Gallery_Settings['WRIS_L3_Slider_Width'];
 			$WRIS_L3_Slider_Height   		= $WRIS_Gallery_Settings['WRIS_L3_Slider_Height'];
+			$WRIS_L3_Custom_CSS   			= $WRIS_Gallery_Settings['WRIS_L3_Custom_CSS'];
 		}
 	}
 

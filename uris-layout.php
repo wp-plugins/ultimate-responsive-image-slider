@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Load All WRIS Custom Post Type
@@ -25,12 +24,13 @@ $j = 1;
 			width: <?php if($WRIS_L3_Slider_Width != "") echo $WRIS_L3_Slider_Width; else echo "1000"; ?>,
 			height: <?php if($WRIS_L3_Slider_Height != "") echo $WRIS_L3_Slider_Height; else echo "500"; ?>,
 			autoplay: <?php if($WRIS_L3_Auto_Slideshow == 1) echo "true"; else echo "false"; ?>,
+			autoplayDelay: <?php if($WRIS_L3_Transition_Speed != "") echo $WRIS_L3_Transition_Speed; else echo "5000"; ?>,
 			arrows: <?php if($WRIS_L3_Sliding_Arrow == 1) echo "true"; else echo "false"; ?>,
 			buttons: <?php if($WRIS_L3_Navigation_Button == 1) echo "true"; else echo "false"; ?>,
 			smallSize: 500,
 			mediumSize: 1000,
 			largeSize: 3000,
-			//fade: true,
+			fade: <?php if($WRIS_L3_Transition == 1) echo "true"; else echo "false"; ?>,
 			thumbnailArrows: true,			
 		});
 	});
@@ -100,6 +100,8 @@ $j = 1;
 		display: none;
 	}
 }
+/* Custom CSS */
+<?php echo $WRIS_L3_Custom_CSS; ?>
 </style>
 <?php  if($WRIS_L3_Slide_Title == 1) { ?>
 <h3 class="uris-slider-title"><?php echo get_the_title( $post_id ); ?> </h3>
