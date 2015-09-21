@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Ultimate Responsive Image Slider
- * Version: 1.8
+ * Version: 2.0
  * Description: Add unlimited image slides using Ultimate Responsive Image Slider in any Page and Post content to give an attractive mode to represent contents.
  * Author: Weblizar
  * Author URI: http://weblizar.com/plugins/
@@ -427,7 +427,13 @@ function uris_pro_SettingsPage() {
 		require_once("get-uris-pro.php");
 	}
 	add_submenu_page('edit.php?post_type=ris_gallery', __('Upgrade To Pro', WRIS_TEXT_DOMAIN), __('Upgrade To Pro', WRIS_TEXT_DOMAIN), 'administrator', 'ris_gallery', 'uris_upgrade_pro_function');
-}
+	add_submenu_page('edit.php?post_type=ris_gallery', __('Help and Support', WRIS_TEXT_DOMAIN), __('Help and Support', WRIS_TEXT_DOMAIN), 'administrator', 'RIS-Help-page', 'RIS_Help_and_Support_page');
+	
+	}
+	function RIS_Help_and_Support_page(){
+		wp_enqueue_style('bootstrap-admin.css', WRIS_PLUGIN_URL.'css/bootstrap-admin.css');
+    require_once("help_and_support.php");
+	}
 
 /**
  * Weblizar RIS Short Code [URIS]
