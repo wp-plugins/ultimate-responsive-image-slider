@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Ultimate Responsive Image Slider
- * Version: 2.0
+ * Version: 2.1
  * Description: Add unlimited image slides using Ultimate Responsive Image Slider in any Page and Post content to give an attractive mode to represent contents.
  * Author: Weblizar
  * Author URI: http://weblizar.com/plugins/

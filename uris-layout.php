@@ -117,7 +117,7 @@ $j = 1;
 		$i++;
 		?>
 		<div class="sp-slide">
-			<img class="sp-image" src="" 
+			<img class="sp-image" alt="<?php echo $Title; ?>" src="" 
 				data-src="<?php echo $Url; ?>"
 				data-small="<?php echo $Url; ?>"
 				data-medium="<?php echo $Url; ?>"
